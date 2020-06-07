@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   text-align: center;
   background-color: #525252;
@@ -21,16 +25,27 @@ h1 {
   margin: 10px;
   padding: 10px;
   background-color: #414141;
+  transition: 250ms;
+  overflow: hidden;
 }
 
 .card:hover {
   cursor: pointer;
+  transform: scale(1.05);
 }
 
 .card--id {
   position: absolute;
-  left: 10px;
-  top: 10px;
+  left: -4px;
+  top: -4px;
+  padding: 10px 0 0 10px;
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+.card--id:hover {
+  background-color: #d65a31;
+  color: #000;
 }
 
 .card--name {
